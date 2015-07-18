@@ -35,14 +35,15 @@ public class Lowest_common_ancestor_of_binary_treeTest {
     public void testLCA() {
         Lowest_common_ancestor_of_binary_tree lcaFinder =
                 new Lowest_common_ancestor_of_binary_tree();
+        lcaFinder.debugTreePrint(root);
         Assert.assertThat(lcaFinder.lowestCommonAncestor(root, treeNode5, treeNode1),
-                Matchers.equalTo(3));
+                Matchers.equalTo(root));
     }
     @Test
     public void testLCA1() {
         Lowest_common_ancestor_of_binary_tree lcaFinder =
                 new Lowest_common_ancestor_of_binary_tree();
         Assert.assertThat(lcaFinder.lowestCommonAncestor(root, treeNode5, treeNode4),
-                Matchers.equalTo(5));
+                Matchers.equalTo(treeNode5));
     }
 }
