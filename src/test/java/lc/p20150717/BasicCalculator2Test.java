@@ -38,6 +38,4 @@ public class BasicCalculator2Test {
         BasicCalculator2 basicCalculator2 = new BasicCalculator2();
         assertThat(basicCalculator2.calculate("3+2*2"), Matchers.equalTo(7));
     }
-
-
 }
