@@ -1,6 +1,6 @@
 package lc.p20150718;
 
-import lc.p20150718.CountCompleteTreeNodes.TreeNode;
+import lc.common.TreeNode;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;

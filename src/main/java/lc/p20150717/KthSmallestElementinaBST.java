@@ -1,5 +1,7 @@
 package lc.p20150717;
 
+import lc.common.TreeNode;
+
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -26,17 +28,5 @@ public class KthSmallestElementinaBST {
             }
         }
         return -1;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-        TreeNode(int x, TreeNode left, TreeNode right) {
-            this.val = x;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

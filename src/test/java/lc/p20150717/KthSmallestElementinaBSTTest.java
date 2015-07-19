@@ -1,5 +1,6 @@
 package lc.p20150717;
 
+import lc.common.TreeNode;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;

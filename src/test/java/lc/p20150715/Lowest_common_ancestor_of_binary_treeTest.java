@@ -1,6 +1,6 @@
 package lc.p20150715;
 
-import lc.p20150715.Lowest_common_ancestor_of_binary_tree.TreeNode;
+import lc.common.TreeNode;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;

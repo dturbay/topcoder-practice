@@ -1,5 +1,7 @@
 package lc.p20150718;
 
+import lc.common.TreeNode;
+
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -78,17 +80,5 @@ public class CountCompleteTreeNodes {
             root = root.right;
         }
         return height - 1;
-    }
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-        TreeNode(int x, TreeNode left, TreeNode right) {
-            this.val = x;
-            this.left = left;
-            this.right = right;
-        }
     }
 }
