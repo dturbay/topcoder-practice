@@ -11,18 +11,14 @@ import java.util.TreeSet;
  */
 public class ContainsDuplicate3 {
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
-        Queue<Integer> queue = new LinkedList<>();
         TreeSet<Integer> values = new TreeSet<>();
-        int firstIndexInQueue = 0;
         if (t < 0 || k < 0) {
             return false;
         }
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
-            queue.add(num);
-            if (i - firstIndexInQueue > k) {
-                values.remove(queue.remove());
-                firstIndexInQueue++;
+            if (i > k) {
+                values.remove(nums[i - k -1]);
             }
             if (!values.add(num)) {
                 return true;
