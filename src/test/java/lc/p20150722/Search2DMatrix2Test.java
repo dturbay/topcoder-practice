@@ -23,4 +23,30 @@ public class Search2DMatrix2Test {
         assertThat(search2DMatrix2.searchMatrix(matrix, 5), Matchers.equalTo(true));
         assertThat(search2DMatrix2.searchMatrix(matrix, 20), Matchers.equalTo(false));
     }
+
+    @Test
+    public void testSearchMatrix1() throws Exception {
+        int[][] matrix = new int[][]{
+                {-1},
+                {-1}
+        };
+        Search2DMatrix2 search2DMatrix2 = new Search2DMatrix2();
+        assertThat(search2DMatrix2.searchMatrix(matrix, -1), Matchers.equalTo(true));
+    }
+
+    @Test
+    public void testSearchMatrix2() throws Exception {
+        int[][] matrix = new int[][]{
+                {3,  3,  8,  13, 13, 18},
+                {4,  5,  11, 13, 18, 20},
+                {9,  9,  14, 15, 23, 23},
+                {13, 18, 22, 22, 25, 27},
+                {18, 22, 23, 28, 30, 33},
+                {21, 25, 28, 30, 35, 35},
+                {24, 25, 33, 36, 37, 40}
+        };
+        Search2DMatrix2 search2DMatrix2 = new Search2DMatrix2();
+        assertThat(search2DMatrix2.searchMatrix(matrix, 21), Matchers.equalTo(true));
+    }
+    
 }
