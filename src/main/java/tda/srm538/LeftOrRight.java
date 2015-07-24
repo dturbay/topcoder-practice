@@ -14,7 +14,7 @@ public class LeftOrRight {
     private int maxDistance(String program, int step) {
         int maxDist = 0;
         int dist = 0;
-        for (char ch: program.toCharArray()) {
+        for (char ch : program.toCharArray()) {
             switch (ch) {
                 case 'R':
                     dist += 1;

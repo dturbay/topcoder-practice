@@ -14,7 +14,7 @@ public class SkewedPerspectives {
     public String[] areTheyPossible(int[] cubes, int B, int w, String[] views) {
         String[] result = new String[views.length];
 
-        for (int viewInd = 0 ; viewInd < views.length ; viewInd++) {
+        for (int viewInd = 0; viewInd < views.length; viewInd++) {
             result[viewInd] = areTheyPossible(cubes.clone(), B, w, views[viewInd], Collections.EMPTY_LIST, 0);
         }
         return result;
@@ -24,7 +24,7 @@ public class SkewedPerspectives {
         int currentColumn = 0;
         List<Integer> free = new ArrayList<>(incFree);
         char[] viewChars = view.toCharArray();
-        for (int i = 0 ; i < viewChars.length ; i++) {
+        for (int i = 0; i < viewChars.length; i++) {
             char ch = viewChars[i];
             if (Character.isDigit(ch)) { // regular cube
                 int color = Integer.parseInt("" + ch);
@@ -40,7 +40,7 @@ public class SkewedPerspectives {
                     return INVALID;
                 }
                 B--;
-                if (i < viewChars.length -1 && viewChars[i + 1] == 'b') {
+                if (i < viewChars.length - 1 && viewChars[i + 1] == 'b') {
                     if (currentHeight == 0) {
                         currentHeight += 2;
                         i++;
@@ -48,10 +48,11 @@ public class SkewedPerspectives {
                         Set<String> resp = new HashSet<>();
                         resp.add(areTheyPossible(cubes.clone(), B, w - currentColumn,
                                 view.substring(i + 2), free, currentHeight + 2));
-                        free.add(currentHeight-1);
+                        free.add(currentHeight - 1);
                         resp.add(areTheyPossible(cubes.clone(), B, w - currentColumn - 1,
                                 view.substring(i + 1), free, currentHeight + 1));
-                        if (resp.contains(VALID)) return VALID; else return INVALID;
+                        if (resp.contains(VALID)) return VALID;
+                        else return INVALID;
                     }
                 } else {
                     if (currentColumn == w) {

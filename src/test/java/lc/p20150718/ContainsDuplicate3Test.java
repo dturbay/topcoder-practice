@@ -3,7 +3,7 @@ package lc.p20150718;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class ContainsDuplicate3Test {
 
@@ -13,16 +13,16 @@ public class ContainsDuplicate3Test {
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
                 new int[]{-1, 2147483647}, 1, 2147483647), Matchers.equalTo(false));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {1, 2}, 1, -1), Matchers.equalTo(false));
+                new int[]{1, 2}, 1, -1), Matchers.equalTo(false));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {-1,-1}, 1, -1), Matchers.equalTo(false));
+                new int[]{-1, -1}, 1, -1), Matchers.equalTo(false));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {0}, 0, 0), Matchers.equalTo(false));
+                new int[]{0}, 0, 0), Matchers.equalTo(false));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {10, 20, 30, 40, 11, 50}, 4, 5), Matchers.equalTo(true));
+                new int[]{10, 20, 30, 40, 11, 50}, 4, 5), Matchers.equalTo(true));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {10, 20, 30, 40, 11, 50}, 3, 5), Matchers.equalTo(false));
+                new int[]{10, 20, 30, 40, 11, 50}, 3, 5), Matchers.equalTo(false));
         assertThat(containsDuplicate3.containsNearbyAlmostDuplicate(
-                new int[] {-1,-1}, 1, 0), Matchers.equalTo(true));
+                new int[]{-1, -1}, 1, 0), Matchers.equalTo(true));
     }
 }

@@ -4,7 +4,7 @@ import lc.p20150718.BasicCalculator.Tokenizer;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class BasicCalculatorTest {
     @Test

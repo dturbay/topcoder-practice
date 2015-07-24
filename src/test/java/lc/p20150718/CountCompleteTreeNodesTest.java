@@ -2,7 +2,6 @@ package lc.p20150718;
 
 import lc.common.TreeNode;
 import org.hamcrest.Matchers;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertThat;

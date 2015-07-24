@@ -1,7 +1,5 @@
 package lc.p20150718;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.TreeSet;
 
 /**
@@ -18,7 +16,7 @@ public class ContainsDuplicate3 {
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             if (i > k) {
-                values.remove(nums[i - k -1]);
+                values.remove(nums[i - k - 1]);
             }
             if (!values.add(num)) {
                 return true;
@@ -34,7 +32,7 @@ public class ContainsDuplicate3 {
     }
 
     private boolean checkDistance(int t, int num, Integer nearest) {
-        if (nearest != null && (Math.abs((long)nearest - (long)num) <= t)) {
+        if (nearest != null && (Math.abs((long) nearest - (long) num) <= t)) {
             return true;
         }
         return false;

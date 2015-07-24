@@ -10,12 +10,11 @@ import java.util.Set;
  * The expression string contains only non-negative integers, +, -, *, / operators and empty spaces.
  * The integer division should truncate toward zero.
  * You may assume that the given expression is always valid.
- *
+ * <p>
  * Some examples:
  * "3+2*2" = 7
- " 3/2 " = 1
- " 3+5 / 2 " = 5
-
+ * " 3/2 " = 1
+ * " 3+5 / 2 " = 5
  */
 public class BasicCalculator2 {
     public int calculate(String s) {
@@ -103,7 +102,7 @@ public class BasicCalculator2 {
 
         public static boolean isOperation(char ch) {
             return MULT_OPS.contains(Character.toString(ch))
-                || ADD_OPS.contains(Character.toString(ch));
+                    || ADD_OPS.contains(Character.toString(ch));
         }
 
         private boolean checkIndex() {

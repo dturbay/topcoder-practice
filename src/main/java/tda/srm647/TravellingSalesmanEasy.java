@@ -9,7 +9,7 @@ public class TravellingSalesmanEasy {
 
     public int getMaxProfit(int M, int[] profit, int[] city, int[] visit) {
         Map<Integer, List<Integer>> profitsByCities = new HashMap<>();
-        for (int i = 0 ; i < city.length ; i++) {
+        for (int i = 0; i < city.length; i++) {
             int c = city[i];
             if (!profitsByCities.containsKey(c)) {
                 profitsByCities.put(c, new ArrayList<>());

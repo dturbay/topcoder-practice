@@ -6,8 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by denysturbai on 7/15/15.
  */
@@ -39,6 +37,7 @@ public class Lowest_common_ancestor_of_binary_treeTest {
         Assert.assertThat(lcaFinder.lowestCommonAncestor(root, treeNode5, treeNode1),
                 Matchers.equalTo(root));
     }
+
     @Test
     public void testLCA1() {
         Lowest_common_ancestor_of_binary_tree lcaFinder =

@@ -14,7 +14,7 @@ public class EvenRoute {
     private int sumOfDistances(int[] x) {
         int summ = 0;
         for (int i = 0; i < x.length; i++) {
-            summ += (i > 0 ? x[i-1] : 0) - x[i];
+            summ += (i > 0 ? x[i - 1] : 0) - x[i];
         }
         return summ;
     }

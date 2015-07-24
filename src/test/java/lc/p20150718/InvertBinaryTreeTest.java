@@ -5,7 +5,7 @@ import lc.common.TreeUtils;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by denysturbai on 7/19/15.

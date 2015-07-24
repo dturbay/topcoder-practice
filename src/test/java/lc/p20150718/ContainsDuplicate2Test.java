@@ -3,7 +3,7 @@ package lc.p20150718;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class ContainsDuplicate2Test {
 
