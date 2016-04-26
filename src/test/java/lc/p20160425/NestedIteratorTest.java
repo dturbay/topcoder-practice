@@ -7,7 +7,6 @@ import java.util.List;
 import org.hamcrest.Matchers;
 import static org.junit.Assert.assertThat;
 
-
 class NestedIntegerImpl implements NestedInteger {
 
   private boolean isInteger;
