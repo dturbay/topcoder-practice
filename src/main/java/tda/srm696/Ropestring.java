@@ -32,7 +32,7 @@ public class Ropestring {
     @Override
     public int compareTo(Object o) {
       Rope other = (Rope) o;
-      if ( (size % 2 == 0 && other.size % 2 == 0) || (size % 2 != 0 && other.size % 2 != 0)) {
+      if (size % 2 == other.size % 2) {
         if (size > other.size) {
           return -1;
         } else if (size == other.size) {
