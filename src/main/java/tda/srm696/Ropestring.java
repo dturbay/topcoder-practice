@@ -76,7 +76,7 @@ public class Ropestring {
       }
     }
 
-    Collections.<Rope>sort(ropes);
+    Collections.sort(ropes);
 
     StringBuilder stringBuilder = new StringBuilder();
     for (Rope rope: ropes) {
