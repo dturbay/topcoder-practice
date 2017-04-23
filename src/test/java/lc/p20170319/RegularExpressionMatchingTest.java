@@ -65,7 +65,6 @@ public class RegularExpressionMatchingTest {
         assertThat(new RegularExpressionMatching().isMatch("a", ".*..a*"), Matchers.is(false));
     }
 
-
     @Test
     public void isMatchTest12() {
         assertThat(new RegularExpressionMatching().isMatch("aabcbcbcaccbcaabc", ".*a*aa*.*b*.c*.*a*"), Matchers.is(true));
