@@ -37,5 +37,6 @@ public class FindPeak {
         System.out.println(new FindPeak().findPeak(new int[]  {5, 10, 20, 15}));
         System.out.println(new FindPeak().findPeak(new int[]  {10, 20, 15, 2, 23, 90, 67}));
         System.out.println(new FindPeak().findPeak(new int[]  {100, 80, 60, 50, 20}));
+        System.out.println(new FindPeak().findPeak(new int[]  {1, 1, 1, 1}));
     }
 }
